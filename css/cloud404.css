@@ -4,7 +4,9 @@
     opacity: .75;
     color:#fff;
     font-family: 'Open Sans', sans-serif;
-    max-height:900px;
+    
+    width: 100%;
+    margin: auto;
     overflow: hidden;
     margin-top: -100px;
 }

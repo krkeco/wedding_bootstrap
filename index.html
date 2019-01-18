@@ -36,7 +36,12 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">KC+HN</a>
+        <a class="js-scroll-trigger " href="#page-top">
+        <div id="logo" class="logo-ds js-scroll-trigger">
+          <img class=" img-fluid" src="img/ds.png" alt="">
+        </div>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        KC+HN</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-dark text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -108,8 +113,9 @@
       <div class="container font-dark" >
         <h1 class="text-uppercase mb-0">KC + Hannah</h1>
         <hr class="star-dark">
+
         <h2 class="font-weight-light mb-0">
-          3pm - 6pm : Ceremony / Reception
+          4pm - 7pm : Ceremony / Reception
             <a class="portfolio-item d-block mx-auto" href="#maps">
               <div class="text-primary">
                 Our Savior Lutheran Church (<i class="fa fa-map-marked"></i>)<br>
@@ -291,6 +297,7 @@
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
+                
               </div>
               <img class="img-fluid" src="img/registry/cenote43.jpg" alt="">
               <div class="text-primary text-center ">Honeymoon</div>
@@ -308,26 +315,28 @@
             </a>
           </div>
           <div class="col-md-6 col-lg-3">
-            <a class="portfolio-item d-block mx-auto" href="#registry-modal">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
+            <a class=" d-block mx-auto" target="blank" href="https://www.amazon.com/wedding/share/KCandHN">
+              
+            <div class="url-hover-colorfy d-flex position-absolute">
+              <div class="my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
               </div>
+            </div>
+
               <img class="img-fluid" src="img/registry/registry.jpg" alt="">
               <div class="text-primary text-center ">Gift Registry</div>
             </a>
           </div>
           
           <div class="col-md-6 col-lg-3">
-            <a class="portfolio-item d-block mx-auto" href="https://paypal.me/krkeco" target="blank">
+            <a class=" d-block mx-auto" href="https://paypal.me/krkeco" target="blank">
 
-
-            <div class="url-hover-colorfy  d-flex position-absolute h-100 w-100">
+            <div class="url-hover-colorfy d-flex position-absolute">
               <div class="my-auto w-100 text-center text-white">
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
+
                
               <img class="img-fluid" src="img/registry/building43.jpg" alt="">
               <div class="text-primary text-center ">Newly Wed Fund</div>
@@ -467,10 +476,17 @@
               <h2 class="text-primary text-uppercase mb-0">Missions</h2>
               <hr class="star-white mb-5">
               <img class="img-fluid mb-5" src="img/registry/poor.jpg" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <p class="mb-5">We want to be able to contribute to Christ kingdom through our wedding and feel like if you don't want to buy us stuff (that we may not need), then you might want to help enable us to go on missions or contribute to people in real need.  Support Christ kingdom by helping us serve in a mission either in Yucatan or next year in China.
+                <br>
+              To support us, donate via the paypal link below and put a note of either 'China mission' or 'Yucatan mission'
+              <br>
+            If you do, we will keep you up to date with pictures and blogs during the mission trip.</p>
+
+            <a class='btn text-small' style="font-size: 1.4em" target="blank" href='https://paypal.me/krkeco'>Support us in missions</a>
+            <a class='btn text-small' style="font-size: 1.4em" target="blank" href='http://www.dcimissiontrips.com/'>Yucatan mission info</a>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
-                Close Project</a>
+                Close</a>
             </div>
           </div>
         </div>
@@ -478,9 +494,9 @@
     </div>
 
     <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="registry-modal">
+    <div class=" mfp-hide" id="registry-modal" >
       
-        <div class="portfolio-modal-dialog container standard404 text-center">
+        <div class="portfolio-modal-dialog standard404 text-center">
             
         <div id="clouds">
             <div class="cloud x1"></div>
@@ -496,7 +512,13 @@
             <div class='headline-404'>THE REGISTRY</div>
             <div class='subtext-404'>DOES NOT EXIST</div>
 
+            <a class='btn' target="blank" href='https://www.amazon.com/wedding/share/KCandHN'>Go to Amazon Registry</a>
             <a class='btn portfolio-item  portfolio-modal-dismiss' href='#yucatan'>Go to the Yucatan Adventure</a>
+
+
+              <a class="btn btn-lg portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close</a>
         </div>
 
 
@@ -588,7 +610,8 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="js/freelancer.js"></script>
+    <script src="js/custom.js"></script>
 
   </body>
 

@@ -12,7 +12,54 @@
   --secondary-color: #b7cfb1;
   --dark: #37474f;
 }
+.logo-wrapper{
+ /* border-radius: 2vw;
+  background-color: white;
+  
+  width: 4vw;
+  height: 4vw;
+  transition: 1s;
+  -webkit-transition:  1s; /* Safari */
+*/
 
+}
+.logo-ds {
+  top:30px;
+  left: 5px;
+
+  
+  width: 50px;
+  height: 50px;
+
+  padding-top: 10px;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+
+  -webkit-transition:  .5s; 
+  transition: .5s;
+
+}
+
+.logo-ds:hover{
+  top:0px;
+  left:0px;
+  
+  width:250px;
+  height:250px;
+  padding-top: 3.2vw;
+  
+  border-radius: 125px;
+  
+
+
+  -webkit-transition: .5s; 
+  transition: .5s;
+
+}
+.logo-shrink {
+  top:10px;
+}
 .bg-secondary {
   background-color: var(--secondary-color) !important;
 }
@@ -49,6 +96,9 @@
 
 .text-secondary {
   color: var(--secondary-light) !important;
+}
+.text-small {
+  font-size: 10px;
 }
 
 .floating-label-form-group-with-focus label {
@@ -117,14 +167,18 @@ hr.star-light:after {
   background-color: var(--secondary-dark);
 }
 
+.url-colorfy-container{
+
+}
 
 .url-hover-colorfy {
+  width: 90%;
+  height: 88%;
   position: absolute;
   display: block;
   max-width: 25rem;
   margin-bottom: 15px;
   font-size: 1.5em;
-  vertical-align: center;
 
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
