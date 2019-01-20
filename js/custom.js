@@ -14,4 +14,5 @@
   $(window).scroll(logoCollapse);
 
 
+
 })(jQuery); // End of use strict

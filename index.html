@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
         <a class="js-scroll-trigger " href="#page-top">
-        <div id="logo" class="logo-ds js-scroll-trigger">
+        <div id="logo" class="logo-ds" onclick="clickLogo()">
           <img class=" img-fluid" src="img/ds.png" alt="">
         </div>
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -63,6 +63,13 @@
           </ul>
         </div>
       </div>
+
+      <script>
+        function clickLogo()
+        {
+          $("#logo").toggleClass("logo-ds-click");
+        }
+      </script>
     </nav>
 
     <!-- Header -->
@@ -134,95 +141,10 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">RSVP</h2>
         <hr class="star-light mb-5">
-      <!--   <div class="row">
-          <div class="col-lg-8 mx-auto"> -->
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-<!-- <form id="contact-form" method="post">
-      <h4>Name:</h4>
-      <input type="text" style="height:35px;" id="name-input" placeholder="Enter name here…" class="form-control" style="width:100%;" /><br/>
-      <h4>Phone:</h4>
-      <input type="phone" style="height:35px;" id="phone-input" placeholder="Enter phone number" class="form-control" style="width:100%;"/><br/>
-      <h4>Email:</h4>
-      <input type="email" style="height:35px;" id="email-input" placeholder="Enter email here…" class="form-control" style="width:100%;"/><br/>
-      <h4>How can we help you?</h4>
-      <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:100%;"></textarea><br/>
-      <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
-      <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
-</form>
-</form>
-<form method="post" action="https://hidden-badlands-85059.herokuapp.com/rsvps/create">
-  <div>
-    <label for="name">name</label>
-    <input name="name" id="name" value="bobby">
-  </div>
-  <div>
-    <label for="attendees">0</label>
-    <input name="attendees" id="attendees" value="0">
-  </div>
-  <div>
-    <label for="song">at last I see the light</label>
-    <input name="song" id="song" value="0">
-  </div>
-  <div>
-    <button>Send my greetings</button>
-  </div>
-</form> -->
-<!-- 
-<form id="contact-form" method="post">
-      <h4>Name:</h4>
-      <input type="text" style="height:35px;" id="name-input" placeholder="Enter name here…" class="form-control" style="width:100%;" /><br/>
-      <h4>Phone:</h4>
-      <input type="phone" style="height:35px;" id="phone-input" placeholder="Enter phone number" class="form-control" style="width:100%;"/><br/>
-      <h4>Email:</h4>
-      <input type="email" style="height:35px;" id="email-input" placeholder="Enter email here…" class="form-control" style="width:100%;"/><br/>
-      <h4>How can we help you?</h4>
-      <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control" style="width:100%;"></textarea><br/>
-      <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
-      <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
-</form> -->
-
-<div class="typeform-widget" data-url="https://kristofercole.typeform.com/to/teQXZL" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=teQXZL&utm_source=typeform.com-13198068-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
-
-
-           <!--  
-            <form name="sentMessage" id="RSVPForm" novalidate="novalidate">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Name</label>
-                  <input class="form-control bg-dark" id="name" type="text" placeholder="Name"  >
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Number of People</label>
-                  <input class="form-control bg-dark text-secondary" id="attendees" type="tel" placeholder="Number of Attendees" >
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Play a song?</label>
-                  <input class="form-control bg-dark" id="song" type="text" placeholder="Play a song?"  >
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Message</label>
-                  <textarea class="form-control bg-dark" id="message" rows="5" placeholder="Message"  ></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn  btn-xl bg-secondary text-dark" id="sendRSVPButton">Send</button>
-              </div>
-            </form> -->
-          <!-- </div>
-        </div> -->
+        <div class="form-height">
+        <div class="typeform-widget form-height" data-url="https://kristofercole.typeform.com/to/teQXZL" style="width: 100%; height: 90%;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=teQXZL&utm_source=typeform.com-13198068-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+      <!--  -->
+      </div>
       </div>
     </section>
 

@@ -20,28 +20,60 @@
   height: 4vw;
   transition: 1s;
   -webkit-transition:  1s; /* Safari */
-*/
-
-}
-.logo-ds {
-  top:30px;
-  left: 5px;
-
-  
-  width: 50px;
-  height: 50px;
-
-  padding-top: 10px;
-  background-color: white;
-  border-radius: 25px;
-  position: absolute;
-
-  -webkit-transition:  .5s; 
-  transition: .5s;
+/**/
 
 }
 
-.logo-ds:hover{
+.logo-ds{
+top: 50px;
+    left: 5px;
+
+    
+    width: 50px;
+    height: 50px;
+
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+
+    -webkit-transition:  .5s; 
+    transition: .5s;
+}
+  .form-height {
+    height:300px;
+    /*background-color: blue;*/
+
+  }
+@media (min-width: 576px) {
+  .form-height {
+    height:500px;
+    /*background-color: white;*/
+
+  }
+}
+
+
+@media (min-width: 576px) {
+  .logo-ds {
+    top:50px;
+
+  }
+}
+@media (min-width: 992px) {
+  .logo-ds {
+    top:80px;
+
+  }
+}
+@media (min-width: 1052px) {
+  .logo-ds {
+    top:30px;
+
+  }
+}
+
+.logo-ds-click{
   top:0px;
   left:0px;
   
