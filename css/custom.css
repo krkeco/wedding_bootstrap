@@ -40,6 +40,9 @@ top: 50px;
     -webkit-transition:  .5s; 
     transition: .5s;
 }
+.logo-ds:hover{
+  opacity: 0.65;
+}
   .form-height {
     height:300px;
     /*background-color: blue;*/
